@@ -1,7 +1,6 @@
 import React from "react";
 
 const Weather = ({ data, locate }) => {
-  let clas;
   const handleSearch = (e) => {
     e.preventDefault();
     let value = e.target[0].value;
@@ -40,7 +39,6 @@ const Weather = ({ data, locate }) => {
             return (
               <div>
                 <h1>{item?.day.condition.text}</h1>
-                <h1></h1>
                 <img src={item.day.condition.icon} alt="" />
                 <h1>{item.day.avgtemp_c}</h1>
               </div>
